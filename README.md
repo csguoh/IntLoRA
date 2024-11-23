@@ -2,9 +2,9 @@
 
 ### [[Paper](https://arxiv.org/pdf/2410.21759)]
 
-### You can tune your customized diffusion model with our IntLoRA on ONE single 3090 GPU!
+### Tune your customized diffusion with our IntLoRA on ONE 3090 GPU!
 
-[Hang Guo](https://csguoh.github.io/)<sup>1</sup> | [Yawei Li](https://yaweili.bitbucket.io/) | [Tao Dai](https://scholar.google.com/citations?user=MqJNdaAAAAAJ&hl=zh-CN)<sup>2</sup>| [Shu-Tao Xia](https://scholar.google.com.hk/citations?user=koAXTXgAAAAJ&hl=zh-CN)<sup>1,5</sup>| [Luca Benini](https://scholar.google.com.hk/citations?user=8riq3sYAAAAJ&hl=zh-CN&oi=ao)
+[Hang Guo](https://csguoh.github.io/)<sup>1</sup> | [Yawei Li](https://yaweili.bitbucket.io/)<sup>2</sup> | [Tao Dai](https://scholar.google.com/citations?user=MqJNdaAAAAAJ&hl=zh-CN)<sup>3</sup>| [Shu-Tao Xia](https://scholar.google.com.hk/citations?user=koAXTXgAAAAJ&hl=zh-CN)<sup>1,4</sup>| [Luca Benini](https://scholar.google.com.hk/citations?user=8riq3sYAAAAJ&hl=zh-CN&oi=ao)<sup>2</sup>
 
 <sup>1</sup>Tsinghua University, <sup>2</sup>ETH Zurich, <sup>3</sup>Shenzhen University, <sup>4</sup>Pengcheng Laboratory 
 
@@ -70,7 +70,20 @@ conda activate intlora
   - `act_nbits`: the activation bits of the activation quantization
   - `gradient_checkpointing `: whether to use the gradient checking to further reduce the GPU cost.
 
-- After run the fine-tunning command above, you can find the generated results in the `./log_quant` fold.
+- After run the fine-tunning command above, you can find the generated results in the `./log_quant` file fold.
+
+## 😄 Evaluation
+- After generate the images, you can test the quality of each generated image using the following command:
+
+```
+python evaluation.py
+```
+
+- It will generate a `.json` file which contains the IQA results of each subject. Then we can obtain the overall evaluation result with 
+
+```
+python get_results.py
+```
 
 
 
