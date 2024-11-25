@@ -2,7 +2,7 @@
 
 ### [[Paper](https://arxiv.org/pdf/2410.21759)]
 
-### Tune your customized diffusion with our IntLoRA on ONE 3090 GPU!
+### Tune your customized diffusion model on ONE 3090 GPU!
 
 [Hang Guo](https://csguoh.github.io/)<sup>1</sup> | [Yawei Li](https://yaweili.bitbucket.io/)<sup>2</sup> | [Tao Dai](https://scholar.google.com/citations?user=MqJNdaAAAAAJ&hl=zh-CN)<sup>3</sup>| [Shu-Tao Xia](https://scholar.google.com.hk/citations?user=koAXTXgAAAAJ&hl=zh-CN)<sup>1,4</sup>| [Luca Benini](https://scholar.google.com.hk/citations?user=8riq3sYAAAAJ&hl=zh-CN&oi=ao)<sup>2</sup>
 
